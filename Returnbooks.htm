@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Return Book - Library Management System
+    </title>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <style>
+
+        body
+        {
+            background-color: #f5f5f5;
+        }
+
+        .return-container
+        {
+            max-width: 600px;
+            margin: 60px auto;
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .return-container h2
+        {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .message
+        {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand"
+            href="index.htm">
+
+            Library Management System
+
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarContent">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div
+            class="collapse navbar-collapse"
+            id="navbarContent">
+
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                        href="index.htm">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                        href="Issuebooks.htm">
+
+                        Issue Book
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item active">
+
+                    <a class="nav-link"
+                        href="Returnbooks.htm">
+
+                        Return Book
+
+                    </a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                        href="search.html">
+
+                        Search Books
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Return Book Form -->
+
+    <div class="container">
+
+        <div class="return-container">
+
+            <h2>
+                Return Book
+            </h2>
+
+            <form id="returnBookForm">
+
+                <div class="form-group">
+
+                    <label>
+                        Student Roll Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="rollNumber"
+                        class="form-control"
+                        placeholder="Enter student roll number"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Book Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="bookNumber"
+                        class="form-control"
+                        placeholder="Enter book number"
+                        required>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-block">
+
+                    Return Book
+
+                </button>
+
+            </form>
+
+
+            <div
+                id="message"
+                class="message">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        document
+            .getElementById("returnBookForm")
+            .addEventListener(
+                "submit",
+                async function(event)
+                {
+                    event.preventDefault();
+
+                    const rollNumber =
+                        document
+                        .getElementById("rollNumber")
+                        .value
+                        .trim();
+
+                    const bookNumber =
+                        document
+                        .getElementById("bookNumber")
+                        .value
+                        .trim();
+
+                    const message =
+                        document
+                        .getElementById("message");
+
+                    message.innerHTML =
+                        "Processing...";
+
+                    try
+                    {
+                        const response =
+                            await fetch(
+                                "http://localhost:5001/api/issuebooks/return",
+                                {
+                                    method:
+                                        "PUT",
+
+                                    headers:
+                                    {
+                                        "Content-Type":
+                                            "application/json"
+                                    },
+
+                                    body:
+                                        JSON.stringify(
+                                        {
+                                            rollNumber:
+                                                rollNumber,
+
+                                            bookNumber:
+                                                bookNumber
+                                        })
+                                }
+                            );
+
+                        const data =
+                            await response.json();
+
+                        if (response.ok)
+                        {
+                            message.innerHTML =
+                                "✅ " + data.message;
+
+                            message.style.color =
+                                "green";
+
+                            document
+                                .getElementById(
+                                    "returnBookForm"
+                                )
+                                .reset();
+                        }
+                        else
+                        {
+                            message.innerHTML =
+                                "❌ " +
+                                (
+                                    data.message ||
+                                    "Failed to return book"
+                                );
+
+                            message.style.color =
+                                "red";
+                        }
+                    }
+                    catch (error)
+                    {
+                        console.error(
+                            error
+                        );
+
+                        message.innerHTML =
+                            "❌ Cannot connect to the backend server.";
+
+                        message.style.color =
+                            "red";
+                    }
+                }
+            );
+
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

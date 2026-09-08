@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+        crossorigin="anonymous">
+
+
+    <title>Teacher Registration</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation Bar -->
+
+    <div class="fluid-container">
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+
+
+            <a class="navbar-brand"
+                href="index.htm">
+
+                <img src="Image/Logo.png"
+                    width="140"
+                    height="80"
+                    alt="logo">
+
+            </a>
+
+
+            <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse"
+                id="navbarSupportedContent">
+
+
+                <ul class="navbar-nav mr-auto">
+
+
+                    <li class="nav-item active">
+
+                        <a class="nav-link"
+                            href="index.htm">
+
+                            Home
+
+                            <span class="sr-only">
+                                (current)
+                            </span>
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                            href="ABOUT.HTML">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-expanded="false">
+
+                            Registration
+
+                        </a>
+
+
+                        <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+
+
+                            <a class="dropdown-item"
+                                href="STUDENTFORM.HTML">
+
+                                Student Registration
+
+                            </a>
+
+
+                            <a class="dropdown-item"
+                                href="COLLEGEFORM.HTML">
+
+                                College Registration
+
+                            </a>
+
+
+                            <a class="dropdown-item active"
+                                href="TEACHER-FORM.HTML">
+
+                                Teacher Registration
+
+                            </a>
+
+
+                        </div>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <!-- Teacher Registration Heading -->
+
+
+    <div class="fluid-container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+
+                <h1 style="margin-top:8%;
+                    background-color:#EFC965;
+                    color:black;
+                    padding:60px;
+                    text-align:center"
+                    class="heading_1">
+
+                    Teacher Registration
+
+                </h1>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Registration Form -->
+
+
+    <div class="container heading_1">
+
+
+        <div class="row">
+
+
+            <!-- Teacher Image -->
+
+
+            <div class="col-md-6">
+
+
+                <div class="card">
+
+
+                    <img src="Image/teacher.jpeg"
+                        class="card-img-top"
+                        alt="Teacher Registration Image"
+                        height="100%"
+                        width="100%">
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Form -->
+
+
+            <div class="col-md-6">
+
+
+                <div class="card">
+
+
+                    <div class="card-body">
+
+
+                        <p style="text-align:center;">
+
+                            Register to avail benefits
+
+                        </p>
+
+
+                        <form id="teacherForm"
+                            style="margin-left:5%">
+
+
+                            <!-- Email -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="email">
+
+                                    Email address
+
+                                </label>
+
+
+                                <input type="email"
+                                    placeholder="Enter Email"
+                                    class="form-control heading_1"
+                                    id="email"
+                                    required>
+
+
+                                <small class="form-text text-muted">
+
+                                    We'll never share your email with anyone else.
+
+                                </small>
+
+
+                            </div>
+
+
+                            <!-- First Name and Last Name -->
+
+
+                            <div class="row">
+
+
+                                <div class="col">
+
+
+                                    <input type="text"
+                                        class="form-control heading_1"
+                                        id="firstName"
+                                        placeholder="Enter First name"
+                                        required>
+
+
+                                </div>
+
+
+                                <div class="col">
+
+
+                                    <input type="text"
+                                        class="form-control heading_1"
+                                        id="lastName"
+                                        placeholder="Enter Last name"
+                                        required>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                            <br>
+
+
+                            <!-- Teacher ID -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="teacherId">
+
+                                    Enter ID Number
+
+                                </label>
+
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="teacherId"
+                                    placeholder="Enter Teacher ID"
+                                    required>
+
+
+                            </div>
+
+
+                            <!-- Password -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="password">
+
+                                    Enter Password
+
+                                </label>
+
+
+                                <input type="password"
+                                    class="form-control"
+                                    id="password"
+                                    placeholder="Enter Password"
+                                    required>
+
+
+                            </div>
+
+
+                            <!-- District -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="district">
+
+                                    Select Your District
+
+                                </label>
+
+
+                                <select class="form-control heading_1"
+                                    id="district"
+                                    required>
+
+
+                                    <option value="">
+
+                                        Select District
+
+                                    </option>
+
+
+                                    <option value="Kolkata">
+
+                                        Kolkata
+
+                                    </option>
+
+
+                                    <option value="Howrah">
+
+                                        Howrah
+
+                                    </option>
+
+
+                                    <option value="Hooghly">
+
+                                        Hooghly
+
+                                    </option>
+
+
+                                    <option value="Medinipur">
+
+                                        Medinipur
+
+                                    </option>
+
+
+                                </select>
+
+
+                            </div>
+
+
+                            <!-- Contact Number -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="contactNumber">
+
+                                    Contact Number
+
+                                </label>
+
+
+                                <input type="tel"
+                                    class="form-control heading_1"
+                                    id="contactNumber"
+                                    placeholder="Enter Contact Number"
+                                    required>
+
+
+                            </div>
+
+
+                            <!-- Address -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="address">
+
+                                    Address
+
+                                </label>
+
+
+                                <textarea class="form-control heading_1"
+                                    id="address"
+                                    placeholder="Enter Address"
+                                    rows="3"
+                                    required></textarea>
+
+
+                            </div>
+
+
+                            <!-- Registration Message -->
+
+
+                            <div id="teacherMessage"
+                                class="mb-3">
+                            </div>
+
+
+                            <!-- Submit Button -->
+
+
+                            <center>
+
+
+                                <button type="submit"
+                                    class="btn btn-primary">
+
+                                    Submit
+
+                                </button>
+
+
+                            </center>
+
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlbFl7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous">
+    </script>
+
+
+    <!-- Teacher Registration JavaScript -->
+
+
+    <script>
+
+
+        const teacherForm =
+            document.getElementById("teacherForm");
+
+
+        teacherForm.addEventListener(
+            "submit",
+            async function(event)
+            {
+
+                event.preventDefault();
+
+
+                const message =
+                    document.getElementById(
+                        "teacherMessage"
+                    );
+
+
+                const email =
+                    document.getElementById(
+                        "email"
+                    ).value.trim();
+
+
+                const firstName =
+                    document.getElementById(
+                        "firstName"
+                    ).value.trim();
+
+
+                const lastName =
+                    document.getElementById(
+                        "lastName"
+                    ).value.trim();
+
+
+                const teacherId =
+                    document.getElementById(
+                        "teacherId"
+                    ).value.trim();
+
+
+                const password =
+                    document.getElementById(
+                        "password"
+                    ).value;
+
+
+                const district =
+                    document.getElementById(
+                        "district"
+                    ).value;
+
+
+                const contactNumber =
+                    document.getElementById(
+                        "contactNumber"
+                    ).value.trim();
+
+
+                const address =
+                    document.getElementById(
+                        "address"
+                    ).value.trim();
+
+
+                message.innerHTML =
+                    '<div class="alert alert-info">' +
+                    'Registering teacher...' +
+                    '</div>';
+
+
+                try
+                {
+
+
+                    const response =
+                        await fetch(
+                            "http://localhost:5001/api/teachers",
+                            {
+                                method: "POST",
+
+                                headers:
+                                {
+                                    "Content-Type":
+                                        "application/json"
+                                },
+
+                                body:
+                                    JSON.stringify(
+                                    {
+                                        email:
+                                            email,
+
+                                        firstName:
+                                            firstName,
+
+                                        lastName:
+                                            lastName,
+
+                                        teacherId:
+                                            teacherId,
+
+                                        password:
+                                            password,
+
+                                        district:
+                                            district,
+
+                                        contactNumber:
+                                            contactNumber,
+
+                                        address:
+                                            address
+                                    })
+                            }
+                        );
+
+
+                    const data =
+                        await response.json();
+
+
+                    if (response.ok)
+                    {
+
+
+                        message.innerHTML =
+                            '<div class="alert alert-success">' +
+                            data.message +
+                            '</div>';
+
+
+                        teacherForm.reset();
+
+
+                    }
+                    else
+                    {
+
+
+                        message.innerHTML =
+                            '<div class="alert alert-danger">' +
+                            data.message +
+                            '</div>';
+
+
+                    }
+
+
+                }
+                catch (error)
+                {
+
+
+                    console.error(error);
+
+
+                    message.innerHTML =
+                        '<div class="alert alert-danger">' +
+                        'Unable to connect to the backend. ' +
+                        'Make sure your server is running on port 5001.' +
+                        '</div>';
+
+
+                }
+
+
+            }
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>

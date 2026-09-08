@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+        crossorigin="anonymous">
+
+
+    <title>Issue Books</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation Bar -->
+
+
+    <div class="fluid-container">
+
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+
+
+            <a class="navbar-brand"
+                href="index.htm">
+
+
+                <img src="Image/Logo.png"
+                    width="140"
+                    height="80"
+                    alt="logo">
+
+
+            </a>
+
+
+            <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+
+                <span class="navbar-toggler-icon"></span>
+
+
+            </button>
+
+
+            <div class="collapse navbar-collapse"
+                id="navbarSupportedContent">
+
+
+                <ul class="navbar-nav mr-auto">
+
+
+                    <li class="nav-item active">
+
+
+                        <a class="nav-link"
+                            href="index.htm">
+
+
+                            Home
+
+
+                            <span class="sr-only">
+
+                                (current)
+
+                            </span>
+
+
+                        </a>
+
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+
+                        <a class="nav-link"
+                            href="ABOUT.HTML">
+
+
+                            About
+
+
+                        </a>
+
+
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-expanded="false">
+
+
+                            Registration
+
+
+                        </a>
+
+
+                        <div class="dropdown-menu"
+                            aria-labelledby="navbarDropdown">
+
+
+                            <a class="dropdown-item"
+                                href="STUDENTFORM.HTML">
+
+
+                                Student Registration
+
+
+                            </a>
+
+
+                            <a class="dropdown-item"
+                                href="COLLEGEFORM.HTML">
+
+
+                                College Registration
+
+
+                            </a>
+
+
+                            <a class="dropdown-item"
+                                href="TEACHER-FORM.HTML">
+
+
+                                Teacher Registration
+
+
+                            </a>
+
+
+                        </div>
+
+
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+
+        </nav>
+
+
+    </div>
+
+
+    <!-- Page Heading -->
+
+
+    <div class="fluid-container">
+
+
+        <div class="row">
+
+
+            <div class="col-md-12">
+
+
+                <h1 style="margin-top:8%;
+                    background-color:#D6DBDF;
+                    color:black;
+                    padding:60px;
+                    text-align:center"
+                    class="heading_1">
+
+
+                    Issuance of Books
+
+
+                </h1>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Issue Book Form -->
+
+
+    <div class="container heading_1">
+
+
+        <div class="row">
+
+
+            <!-- Image -->
+
+
+            <div class="col-md-6">
+
+
+                <div class="card">
+
+
+                    <img src="Image/literature-3091212__480.jpg"
+                        width="100%"
+                        height="100%"
+                        alt="Library Management System Image"
+                        class="card-img-top">
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Form -->
+
+
+            <div class="col-md-6">
+
+
+                <div class="card">
+
+
+                    <div class="card-body">
+
+
+                        <p>
+
+                            Issue books to registered students
+                            using their roll number.
+
+                        </p>
+
+
+                        <br>
+
+
+                        <form id="issueBookForm">
+
+
+                            <!-- First Name -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="firstName">
+
+                                    First Name
+
+                                </label>
+
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="firstName"
+                                    placeholder="Enter First Name">
+
+
+                            </div>
+
+
+                            <!-- Last Name -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="lastName">
+
+                                    Last Name
+
+                                </label>
+
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="lastName"
+                                    placeholder="Enter Last Name">
+
+
+                            </div>
+
+
+                            <!-- Roll Number -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="rollNumber">
+
+                                    Enter Roll Number
+
+                                </label>
+
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="rollNumber"
+                                    placeholder="Enter Roll Number"
+                                    required>
+
+
+                            </div>
+
+
+                            <!-- Book Number -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="bookNumber">
+
+                                    Enter Book Number
+
+                                </label>
+
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="bookNumber"
+                                    placeholder="Enter Book Number"
+                                    required>
+
+
+                            </div>
+
+
+                            <!-- Book Name -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="bookName">
+
+                                    Enter Book Name
+
+                                </label>
+
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="bookName"
+                                    placeholder="Enter Book Name">
+
+
+                            </div>
+
+
+                            <!-- Due Date -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="dueDate">
+
+                                    Enter Due Date
+
+                                </label>
+
+
+                                <input type="date"
+                                    class="form-control"
+                                    id="dueDate"
+                                    required>
+
+
+                            </div>
+
+
+                            <!-- Library ID -->
+
+
+                            <div class="form-group">
+
+
+                                <label for="libraryId">
+
+                                    Enter Library ID
+
+                                </label>
+
+
+                                <input type="text"
+                                    class="form-control"
+                                    id="libraryId"
+                                    placeholder="Enter Library ID"
+                                    required>
+
+
+                            </div>
+
+
+                            <!-- Message -->
+
+
+                            <div id="issueMessage"
+                                class="mb-3">
+                            </div>
+
+
+                            <!-- Submit -->
+
+
+                            <center>
+
+
+                                <button type="submit"
+                                    class="btn btn-primary">
+
+
+                                    Issue Book
+
+
+                                </button>
+
+
+                            </center>
+
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+
+    <script>
+
+
+        const issueBookForm =
+            document.getElementById(
+                "issueBookForm"
+            );
+
+
+        issueBookForm.addEventListener(
+            "submit",
+            async function(event)
+            {
+
+                event.preventDefault();
+
+
+                const message =
+                    document.getElementById(
+                        "issueMessage"
+                    );
+
+
+                const firstName =
+                    document.getElementById(
+                        "firstName"
+                    ).value.trim();
+
+
+                const lastName =
+                    document.getElementById(
+                        "lastName"
+                    ).value.trim();
+
+
+                const rollNumber =
+                    document.getElementById(
+                        "rollNumber"
+                    ).value.trim();
+
+
+                const bookNumber =
+                    document.getElementById(
+                        "bookNumber"
+                    ).value.trim();
+
+
+                const bookName =
+                    document.getElementById(
+                        "bookName"
+                    ).value.trim();
+
+
+                const dueDate =
+                    document.getElementById(
+                        "dueDate"
+                    ).value;
+
+
+                const libraryId =
+                    document.getElementById(
+                        "libraryId"
+                    ).value.trim();
+
+
+                message.innerHTML =
+                    '<div class="alert alert-info">' +
+                    'Issuing book...' +
+                    '</div>';
+
+
+                try
+                {
+
+
+                    const response =
+                        await fetch(
+                            "http://localhost:5001/api/issuebooks",
+                            {
+                                method: "POST",
+
+                                headers:
+                                {
+                                    "Content-Type":
+                                        "application/json"
+                                },
+
+                                body:
+                                    JSON.stringify(
+                                    {
+                                        firstName:
+                                            firstName,
+
+                                        lastName:
+                                            lastName,
+
+                                        rollNumber:
+                                            rollNumber,
+
+                                        bookNumber:
+                                            bookNumber,
+
+                                        bookName:
+                                            bookName,
+
+                                        dueDate:
+                                            dueDate,
+
+                                        libraryId:
+                                            libraryId
+                                    })
+                            }
+                        );
+
+
+                    const data =
+                        await response.json();
+
+
+                    if (response.ok)
+                    {
+
+
+                        message.innerHTML =
+                            '<div class="alert alert-success">' +
+                            data.message +
+                            '</div>';
+
+
+                        issueBookForm.reset();
+
+
+                    }
+                    else
+                    {
+
+
+                        message.innerHTML =
+                            '<div class="alert alert-danger">' +
+                            data.message +
+                            '</div>';
+
+
+                    }
+
+
+                }
+                catch (error)
+                {
+
+
+                    console.error(error);
+
+
+                    message.innerHTML =
+                        '<div class="alert alert-danger">' +
+                        'Unable to connect to the backend. ' +
+                        'Make sure your server is running on port 5001.' +
+                        '</div>';
+
+
+                }
+
+
+            }
+        );
+
+
+    </script>
+
+
+    <!-- Bootstrap JavaScript -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous">
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlbFl7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>

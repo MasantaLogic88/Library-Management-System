@@ -1,0 +1,42 @@
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.heading {
+    text-align: center;
+    color: #0d6efd;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.heading_1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #000 !important;
+}
+
+.dark-mode .heading,
+.dark-mode .heading_1 {
+    color: white !important;
+}
+
+.dark-mode a {
+    color: #90caf9;
+}
